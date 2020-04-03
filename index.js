@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const chords = require('./chords')
+const scales = require('./scales')
 
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*"); 
@@ -9,10 +10,13 @@ app.use(function(req, res, next) {
 })
 
 app.get('/chords', function (req, res) {
-  console.log('enviado')
   res.json(chords.chords)
 })
 
+app.get('/scales', function (req, res) {
+  res.json(scales.scales)
+})
+
 app.listen(3000, function () {
-  console.log('Example app listening on port 3000!')
+  console.log('I wanna be yours')
 })
