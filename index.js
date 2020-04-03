@@ -8,7 +8,7 @@ app.use(function(req, res, next) {
   next()
 })
 
-app.get('/chords', function (req, res) {
+app.get((__dirname+'/chords'), function (req, res) {
   console.log('enviado')
   res.json(chords.chords)
 })
