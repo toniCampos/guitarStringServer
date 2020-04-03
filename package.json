@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "assets":[
+    "src/favicon.ico",
+    "src/assets"
+  ],
   "engines": {
     "node": "12.16.1"
   },
