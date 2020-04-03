@@ -9,8 +9,8 @@
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-  "keywords": [],
+    "start": "node index.js"
+  },
   "engines":{
     "node": "12.16.1"
   },
@@ -19,3 +19,4 @@
   "dependencies": {
     "express": "^4.17.1"
   }
+}
